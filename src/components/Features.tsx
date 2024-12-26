@@ -20,7 +20,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-white to-[#F1F0FB]">
       <div className="container mx-auto px-4">
         {features.map((feature, index) => (
           <motion.div
@@ -34,16 +34,19 @@ const Features = () => {
             }`}
           >
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">{feature.title}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#6366F1]">
+                {feature.title}
+              </h2>
               <p className="text-lg text-gray-600">{feature.description}</p>
             </div>
             <div className="flex-1">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                className="relative"
+                className="relative group"
               >
-                <div className="w-full aspect-square bg-muted rounded-2xl overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-[#6366F1] rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity" />
+                <div className="relative w-full aspect-square bg-white rounded-2xl overflow-hidden shadow-xl">
                   <img
                     src={feature.image}
                     alt={feature.title}

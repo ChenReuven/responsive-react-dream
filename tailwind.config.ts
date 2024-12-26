@@ -25,16 +25,16 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#ff4800",
-          foreground: "#ffffff",
-          hover: "#ff7a45",
+          DEFAULT: "#8B5CF6",
+          foreground: "#FFFFFF",
+          hover: "#9F75FF",
         },
         secondary: {
-          DEFAULT: "#1a1a1a",
-          foreground: "#ffffff",
+          DEFAULT: "#1A1F2C",
+          foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#f8f9fa",
+          DEFAULT: "#F1F0FB",
           foreground: "#4b5563",
         },
       },
@@ -56,11 +56,20 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        "scale": {
+          "0%": { transform: "scale(0.95)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
       animation: {
         "float": "float 6s ease-in-out infinite",
         "fade-up": "fade-up 0.5s ease-out forwards",
         "fade-in": "fade-in 0.3s ease-out forwards",
+        "scale": "scale 0.3s ease-out forwards",
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'hero-gradient': 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)',
       },
     },
   },
