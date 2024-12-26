@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       transition={{ duration: 0.6 }}
       className="min-h-screen bg-white"
     >
+      <Header />
       <Hero />
       <Features />
       <Footer />
