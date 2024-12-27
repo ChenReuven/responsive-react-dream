@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F1F0FB] via-white to-[#E5DEFF]">
+    <section className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100">
       <div className="absolute inset-0 bg-gradient-radial from-transparent to-white/30 pointer-events-none" />
       <div className="container mx-auto px-4 py-20 relative z-10">
         <motion.div
@@ -11,7 +11,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#6366F1]">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-500">
             Love deals? You came to the right place.
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8">
@@ -20,7 +20,7 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-hover transition-all duration-300 shadow-lg hover:shadow-primary/25"
+            className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-500 transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
           >
             Add to Chrome - It's Free
           </motion.button>

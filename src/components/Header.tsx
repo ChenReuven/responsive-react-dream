@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#6366F1]">
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-500">
                 PayPal honey
               </span>
             </Link>
@@ -39,7 +39,7 @@ const Header = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#F04E23] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#E03E13] transition-colors"
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-500 transition-colors"
             >
               Add to Chrome — It's Free
             </motion.button>

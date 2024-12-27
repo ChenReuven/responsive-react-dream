@@ -25,16 +25,16 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#8B5CF6",
+          DEFAULT: "#2563eb", // Changed to blue
           foreground: "#FFFFFF",
-          hover: "#9F75FF",
+          hover: "#3b82f6", // Lighter blue for hover
         },
         secondary: {
           DEFAULT: "#1A1F2C",
           foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#F1F0FB",
+          DEFAULT: "#F0F7FF", // Adjusted to a light blue tint
           foreground: "#4b5563",
         },
       },
@@ -69,7 +69,7 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-gradient': 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #2563eb 0%, #3b82f6 100%)', // Updated to blue gradient
       },
     },
   },
